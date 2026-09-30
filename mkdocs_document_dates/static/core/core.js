@@ -436,9 +436,10 @@ function initPluginFeatures() {
     tippyManager.initialize();
     processDataLoading();
     initLayoutSwitcher();
-    AvatarService.init().then(() => {
-        loadAvatars();
-    });
+    // Disable cdn loading
+    // AvatarService.init().then(() => {
+    //     loadAvatars();
+    // });
     enableHorizontalWheelScroll();
 
     // 观察插件尺寸变化，resize 时动态处理布局
